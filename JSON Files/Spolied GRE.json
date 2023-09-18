@@ -1,0 +1,89 @@
+  
+{
+  "Sequence Name": "Spoiled Gradient Echo (GRE)",
+
+  "Elements": {
+    "RF": ["Flip Angle", "Is Alternating", "Start Time", "End Time"],
+    "Gradient": ["Functionality", "Orientation", "Is Alternating", "Start Amplitude Polarity", "End Amplitude Polarity", "Start Time", "End Time"]
+  },
+
+  "Sequence": [
+
+    {"RF":
+    {
+      "Flip Angle": 68,
+      "Is Alternating": false,
+      "Start Time": 1,
+      "End Time": 3
+    }
+  },
+    
+    {"Gradient":
+    {
+      "Functionality": "Slice Selection",
+      "Orientation": "Z",
+      "Is Alternating": false, 
+      "Start Amplitude Polarity": "Zero",
+      "End Amplitude Polarity": "Positive",
+      "Start Time": 1,
+      "End Time": 3
+    }
+  },
+
+    {"Gradient":
+    {
+      "Functionality": "Phase Encoding",
+      "Orientation": "Y",
+      "Is Alternating": true, 
+      "Start Amplitude Polarity": "Zero",
+      "End Amplitude Polarity": "Positive",
+      "Start Time": 4,
+      "End Time": 6
+    }
+  },
+
+    {"Gradient":
+    {
+      "Functionality": " ",
+      "Orientation": "X",
+      "Is Alternating": false, 
+      "Start Amplitude Polarity": "Zero",
+      "End Amplitude Polarity": "Negative",
+      "Start Time": 4,
+      "End Time": 6
+    }
+  },
+
+    {"Gradient":
+    {
+      "Functionality": "Frequency Encoding",
+      "Orientation": "X",
+      "Is Alternating": false, 
+      "Start Amplitude Polarity": "Zero",
+      "End Amplitude Polarity": "Positive",
+      "Start Time": 6,
+      "End Time": 10
+    }
+  }, 
+
+    {"Gradient":
+    {
+      "Functionality": "Spoiler",
+      "Orientation": "X",
+      "Is Alternating": false, 
+      "Start Amplitude Polarity": "Zero",
+      "End Amplitude Polarity": "Positive",
+      "Start Time": 11,
+      "End Time": 13
+    }
+  }
+
+  ],
+
+  "Time Parameters": {
+    "TE": 8,
+    "Aquisition Duration": 5, 
+    "TR": 2000
+  }
+
+  }

@@ -1,0 +1,87 @@
+  
+{
+  "Sequence Name": "Spin Echo (SE)",
+
+  "Elements": {
+    "RF": ["Flip Angle", "Is Alternating", "Start Time", "End Time"],
+    "Gradient": ["Functionality", "Orientation", "Is Alternating", "Start Amplitude Polarity", "End Amplitude Polarity", "Start Time", "End Time"]
+  },
+
+  "Sequence": [
+
+    {"RF":
+    {
+      "Flip Angle": 90,
+      "Is Alternating": false,
+      "Start Time": 1,
+      "End Time": 3
+    }
+  },
+    
+    {"Gradient":
+    {
+      "Functionality": "Slice Selection",
+      "Orientation": "Z",
+      "Is Alternating": false, 
+      "Start Amplitude Polarity": "Zero",
+      "End Amplitude Polarity": "Positive",
+      "Start Time": 1,
+      "End Time": 3
+    }
+  },
+
+  {"RF":
+  {
+    "Flip Angle": 180,
+    "Is Alternating": false,
+    "Start Time": 9,
+    "End Time": 11
+    }
+  },
+
+    {"Gradient":
+    {
+      "Functionality": "Phase Encoding",
+      "Orientation": "Y",
+      "Is Alternating": true, 
+      "Start Amplitude Polarity": "Negative",
+      "End Amplitude Polarity": "Positive",
+      "Start Time": 13,
+      "End Time": 15
+    }
+  },
+
+    {"Gradient":
+    {
+      "Functionality": " ",
+      "Orientation": "X",
+      "Is Alternating": false, 
+      "Start Amplitude Polarity": "Zero",
+      "End Amplitude Polarity": "Negative",
+      "Start Time": 16,
+      "End Time": 18
+    }
+  },
+
+    {"Gradient":
+    {
+      "Functionality": "Frequency Encoding",
+      "Orientation": "X",
+      "Is Alternating": false, 
+      "Start Amplitude Polarity": "Zero",
+      "End Amplitude Polarity": "Positive",
+      "Start Time": 18,
+      "End Time": 22
+    }
+  }
+
+  ],
+
+  "Time Parameters": {
+    "TE": 20,
+    "Aquisition Duration": 5, 
+    "TR": 2000
+
+  }
+
+  }
